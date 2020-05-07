@@ -20,6 +20,9 @@ bindsym $super+Return exec i3-sensible-terminal
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 
+# switch layouts
+exec --no-startup-id setxkbmap us,il -option 'grp:alt_shift_toggle'
+
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
 bindsym $super+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 8'
